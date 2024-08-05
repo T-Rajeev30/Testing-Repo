@@ -1,0 +1,766 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.pace {
+    pointer-events: none;
+    user-select: none;
+    z-index: 2000;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 30vh;
+    border: 0px;
+    height: 2px;
+    overflow: hidden;
+    background:white;
+  }
+  
+  .pace .pace-progress {
+    box-sizing: border-box;
+    transform: translate3d(0, 0, 0);
+    max-width: 400px;
+    position: fixed;
+    z-index: 2000;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    height: 100vh;
+    width: 100%;
+    background: red;
+  }
+  
+  .pace.pace-inactive {
+    display: none;
+  }
+  
+  #preloader{
+    width:100%;
+    height:100vh;
+    background:white;
+    overflow:hidden;
+    position:fixed;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .p {
+    font-size: 4vw;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color:red;
+  }
+  
+.head img{
+    height: 50px;
+    width: 150px;
+    margin-left: 15px;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    
+}
+.head button{
+    color: white;
+    height: 35px;
+    background-color: red;
+    width: 80px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+.button{
+    margin-right: 20px;
+}
+.wlcm{
+    display: flex;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 50px;
+    gap: 25px;
+}
+.wlcm img{
+    height: 70px;
+    width: 200px;
+    margin-top: 15px;
+}
+.project{
+    font-size: 35px;
+    margin-left: 50px;
+}
+.grp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.grp img {
+    height: 400px;
+    width: 600px;
+    margin: right 50px ;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    gap: 20px;
+}
+
+.start p {
+    margin: 0 0 10px 0; 
+    font-size: 35px;
+
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+}
+.exp {
+    font-weight: bolder;
+    margin-left: 50px;
+    font-size:30px;
+}
+.explore p{
+    margin-left: 55px;
+    margin-bottom: 20px;
+
+}
+.task{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.task img{
+    height: 250px;
+    width: 250px;
+}
+.team{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.team img{
+    height: 250px;
+    width: 250px;
+}
+.time{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.time img{
+    height: 250px;
+    width: 250px;
+}
+.calendar{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.calendar img{
+    height: 250px;
+    width: 250px;
+}
+.report{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.report img{
+    height: 250px;
+    width: 250px;
+}
+.last {
+    height: 70vh;
+    width: 100%;
+}
+.footer-container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vh;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.column h3 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.column a {
+    text-decoration: none;
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.column a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-logo p {
+    margin: 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 4vw; 
+    padding: 10px;
+}
+
+.social-media i {
+    color: #000000; 
+    font-size: 30px; 
+    transition: color 0.3s; 
+}
+
+.social-media i:hover {
+    transform: scale(1.2); 
+}
+
+.social-media .fa-facebook:hover {
+    color: #3a5fb1; 
+}
+
+.social-media .fa-twitter:hover {
+    color: #1da1f2; 
+}
+
+.social-media .fa-instagram:hover {
+    color: #e62649;
+}
+
+.social-media .fa-youtube:hover {
+    color: #ff0000;
+}
+
+.last{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#ffffff,#ff9a9a);
+}
+.txt p{
+    font-size: 1.8vw;
+}
+.text p{
+    font-size: 1.8vw;
+}
+
+/* Media Query for devices with width 1200px or less */
+@media screen and (max-width: 1200px) {
+    .title-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .title-bar .title-image {
+        max-width: 80px; /* Adjust the size of the image */
+        margin-right: 0;
+        margin-bottom: 10px; /* Add space between image and text */
+    }
+
+    .title-bar .title-text {
+        font-size: 20px; /* Adjust the font size */
+    }
+
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head img {
+        max-width: 80px; /* Adjust the logo size */
+        margin-bottom: 10px;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Space between buttons */
+    }
+
+    .main .wlcm {
+        font-size: 1.5rem; /* Adjust the welcome text size */
+        text-align: center;
+    }
+
+    .main .project {
+        font-size: 1.2rem; /* Adjust the project text size */
+        text-align: center;
+    }
+
+    .grp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grp .start {
+        text-align: center;
+    }
+
+    .grp .homepageimg {
+        max-width: 100%; /* Adjust the image size */
+        margin-top: 20px;
+    }
+
+    .feature .task,
+    .feature .team,
+    .feature .time,
+    .feature .calendar,
+    .feature .report {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature img {
+        max-width: 80%; /* Adjust the image size */
+        margin-bottom: 10px;
+    }
+
+    .feature .txt,
+    .feature .text {
+        text-align: center;
+    }
+
+    .last .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .last .column {
+        margin-bottom: 20px;
+    }
+
+    .social-media {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .social-media i {
+        font-size: 25px; /* Adjust the icon size */
+    }
+}
+
+
+/* Media query for devices with a max-width of 992px */
+@media (max-width: 992px) {
+    /* General adjustments */
+    .head img {
+        width: 150px; /* Adjust logo size */
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn1, .btn2 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .main {
+        text-align: center;
+    }
+
+    .homepageimg {
+        width: 100%; /* Make image responsive */
+        height: auto;
+    }
+
+    .feature {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .task, .team, .time, .calendar, .report {
+        width: 100%;
+        text-align: center;
+    }
+
+    .task img, .team img, .time img, .calendar img, .report img {
+        width: 80%; /* Adjust image sizes */
+        height: auto;
+    }
+
+    .social-media i {
+        font-size: 25px; /* Adjust social media icons size */
+        margin: 0 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Media Query for screens 768px and below */
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .head img {
+        max-width: 150px; /* Adjust logo size */
+    }
+
+    .button {
+        margin-top: 10px;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .grp {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homepageimg {
+        width: 100%;
+        max-width: 400px; /* Adjust image size */
+    }
+
+    .feature {
+        padding: 20px;
+    }
+
+    .feature .task, .feature .team, .feature .time, .feature .calendar, .feature .report {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature img {
+        max-width: 100%; /* Make images responsive */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .column {
+        margin-bottom: 20px;
+    }
+
+    .social-media {
+        font-size: 24px; /* Adjust social media icon size */
+    }
+
+    .social-media i {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+    .head img {
+        height: 40px;
+        width: 120px;
+    }
+    .button {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .head button {
+        height: 30px;
+        width: 70px;
+    }
+    .grp {
+        margin: 20px;
+    }
+    .grp img {
+        height: 200px;
+        width: 300px;
+    }
+    .start p {
+        font-size: 20px;
+    }
+    .start {
+        margin-left: 0;
+    }
+    .task, .team, .time, .calendar, .report {
+        margin-top: 50px;
+    }
+    .task img, .team img, .time img, .calendar img, .report img {
+        height: 150px;
+        width: 150px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-logo img {
+        width: 100px;
+    }
+    .footer-logo p {
+        font-size: 14px;
+    }
+    .column {
+        margin: 20px 0;
+    }
+    .column h3 {
+        font-size: 18px;
+    }
+    .column a {
+        font-size: 14px;
+    }
+    .last{
+        height: 100vh;
+        width: 100vh;
+    }
+    .social-media img {
+        width: 25px;
+        height: 25px;
+    }
+    .txt p, .text p {
+        font-size: 1rem;
+    }
+}
+
+/* Media query for 475px width */
+@media (max-width: 475px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+    .head img {
+        height: 35px;
+        width: 110px;
+    }
+    .button {
+        margin-right: 0;
+        margin-top: 5px;
+    }
+    .head button {
+        height: 28px;
+        width: 65px;
+        font-size: small;
+    }
+    .wlcm {
+        font-size: 1.4rem;
+        margin: 30px;
+        gap: 15px;
+    }
+    .wlcm img {
+        height: 60px;
+        width: 180px;
+    }
+    .project, .exp, .start p {
+        font-size: 1.1rem;
+        margin: 30px;
+    }
+    .grp img, .task img, .team img, .time img, .calendar img, .report img {
+        max-width: 220px;
+    }
+    .footer-container {
+        padding: 25px;
+    }
+    .footer-logo img {
+        width: 90px;
+    }
+    .footer-logo p {
+        font-size: 13px;
+    }
+    .column h3 {
+        font-size: 17px;
+    }
+    .column a {
+        font-size: 13px;
+    }
+    .social-media img {
+        width: 22px;
+        height: 22px;
+    }
+    .txt p, .text p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Media query for 375px width */
+@media (max-width: 375px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+    .head img {
+        height: 32px;
+        width: 105px;
+    }
+    .button {
+        margin-right: 0;
+        margin-top: 5px;
+    }
+    .head button {
+        height: 26px;
+        width: 60px;
+        font-size: small;
+    }
+    .wlcm {
+        font-size: 1.3rem;
+        margin: 25px;
+        gap: 12px;
+    }
+    .wlcm img {
+        height: 55px;
+        width: 170px;
+    }
+    .project, .exp, .start p {
+        font-size: 1rem;
+        margin: 25px;
+    }
+    .grp img, .task img, .team img, .time img, .calendar img, .report img {
+        max-width: 210px;
+    }
+    .footer-container {
+        padding: 20px;
+    }
+    .footer-logo img {
+        width: 85px;
+    }
+    .footer-logo p {
+        font-size: 12px;
+    }
+    .column h3 {
+        font-size: 16px;
+    }
+    .column a {
+        font-size: 12px;
+    }
+    .social-media img {
+        width: 20px;
+        height: 20px;
+    }
+    .txt p, .text p {
+        font-size: 1rem;
+    }
+}
+
+/* Media query for 320px width */
+@media (max-width: 320px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+    .head img {
+        height: 30px;
+        width: 100px;
+    }
+    .button {
+        margin-right: 0;
+        margin-top: 5px;
+    }
+    .head button {
+        height: 25px;
+        width: 60px;
+        font-size: small;
+    }
+    .wlcm {
+        font-size: 1.2rem;
+        margin: 20px;
+        gap: 10px;
+    }
+    .wlcm img {
+        height: 50px;
+        width: 150px;
+    }
+    .project, .exp, .start p {
+        font-size: 1rem;
+        margin: 20px;
+    }
+    .grp img, .task img, .team img, .time img, .calendar img, .report img {
+        max-width: 200px;
+    }
+    .footer-container {
+        padding: 20px;
+    }
+    .footer-logo img {
+        width: 80px;
+    }
+    .footer-logo p {
+        font-size: 12px;
+    }
+    .column h3 {
+        font-size: 16px;
+    }
+    .column a {
+        font-size: 12px;
+    }
+    .social-media img {
+        width: 20px;
+        height: 20px;
+    }
+    .txt p, .text p {
+        font-size: 1rem;
+    }
+}
